@@ -1,0 +1,1 @@
+// JavaScript frontend logic\nconsole.log('Hello, World!');\n// Add your JavaScript code here...\n
