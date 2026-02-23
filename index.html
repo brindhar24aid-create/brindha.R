@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Disease Detection</title>
+</head>
+<body>
+    <h1>Crop Disease Detection Application</h1>
+    <p>Welcome to the Crop Disease Detection Application. Please upload an image of the crop leaf.</p>
+    <input type="file" id="cropImage" accept="image/*" />
+    <button id="detectButton">Detect Disease</button>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('detectButton').onclick = function() {
+            const input = document.getElementById('cropImage');
+            if (input.files.length > 0) {
+                // Add code to call the machine learning model for disease detection
+                document.getElementById('result').innerText = 'Detection results will be displayed here.';
+            } else {
+                alert('Please upload an image.');
+            }
+        };
+    </script>
+</body>
+</html>
